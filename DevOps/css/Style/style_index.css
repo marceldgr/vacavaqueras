@@ -36,7 +36,8 @@ header{
 
 .navegacion a{
 position: relative;
-font-size: 15px;
+font-size: 16px;
+text-decoration: none;
 color: aliceblue;
 font-weight: 500;
 margin-left: 40px;
