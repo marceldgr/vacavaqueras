@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Style/style_login.css">
+   
+
+</head>
+<body>
+    <main>
+        <div class="Contenedor_todo">
+             <div class="caja_trasera">
+                <!--caja de login-->
+                <div class="caja_de_login">
+                    <h3>¿ya tienes una cuenta?</h3>
+                    <p>Inicar sesión para entrar.</p>
+                    <button id="btn_iniciar_sesion">Iniciar Sesion</button>
+                   
+                </div>
+                <!--caja de regsitros-->
+                <div class="caja_de_registros">
+                    <h3>¿Aún no tiene una cuenta?</h3>
+                    <p>Registrate para que puedas inicar sesión.</p>
+                    <button id="btn_registrar">Registarse</button>
+                </div>
+            </div>
+
+            <!--"ingresa datos inicio de sesion"-->
+            <div class="contenedor_login_register">
+                <!--formulario login-->
+            <form action=""  class="formulario_login" id="formlg">
+                    <h2>Iniciar Sesión</h2>
+                    <input name="Correo" type="text" id="Correo_login" class="from-controlador" placeholder=" Correo" >
+
+                    <input name="Contraseña" type="password" id="Contraseña_login"  class ="form-control" placeholder="Contraseña" >
+                    <!--"pagina de recuper contraseña"-->
+                    <p class ="forget">
+                        ¿Has olvidado tu Contraseña?
+                        <a href="" >Recuperar Contraseña</a>
+                    </p>
+                    <input type="submit" value="Iniciar Sesion">
+                   <!-- <button id="btnEntrar">Entrar</button>-->
+                </form>
+                
+            
+                <!--formulario_register-->
+
+                <form action=""  method="POST" class="formulario_register" id="formrg">
+                    <h2>Registro</h2>
+                    <input name="Nombre" type="text" id="Nombre" class="form-control" placeholder="Nombre" >
+                    <input name="Apellidos" type="text" id="Apellidos" class="form-control" placeholder="Apellidos">
+                    <input name="Telefono" type="number" id="Telefono" class="form-control" placeholder="Telefono">
+                    <input name="Direccion" type="text" id="Direccion" class="form-control" placeholder="Direccion">
+                    <input name="Correo" type="Email" id="Correo" class="form-control" placeholder="Correo" >
+                    <input name="Usuario" type="text" id="Usuario" class="form-control" placeholder="Usuario" >
+                    <input name="Contraseña" type="password" id="Contraseña" class="form-control" placeholder="Contraseña" >
+                   <input name="confirmar_contraseña" type="password" id="confirmar_contraseña" class="form-control" placeholder="confirmar contraseña">
+                   
+                   <div class="checkbox-label">
+                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos">
+                    Acepto los Términos y Condiciones</div>
+        
+                    <input type="submit" value="Registrarse">
+                    
+                   
+                </form>
+            </div>
+        </div>
+    </main>
+   <!--
+<script src="js/librerias/jquery-3.3.1.min.js"></script>
+<script src="js/librerias/sweetalert2.js"></script>
+  <script src="js/librerias/sweetalert.min.js"></script>
+   
+   --> 
+    <script src="js/logica/login.js"></script>
+    <script src="js/script_login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+     
+</body>
+
+</html>
